@@ -96,7 +96,7 @@ header {
 
 /* Section styles */
 section {
-    padding: 100px 14px;
+    padding: 100px 14%;
 }
 
 /* Home section styles */
@@ -110,7 +110,6 @@ section {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
-    display: grid;
     justify-content: space-between;
 }
 
@@ -149,4 +148,5 @@ section {
 
 .btn:hover {
     transform: translateY(-5px);
+    background: var(--text-color);
 }
