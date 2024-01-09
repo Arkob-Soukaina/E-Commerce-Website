@@ -26,11 +26,11 @@ body {
     color: var(--text-color);
 }
 
-/* Header styles */
+/* menu navbar styles */
 header {
     width: 100%;
     top: 0;
-    right: 0;
+    right: 10;
     z-index: 1000;
     position: fixed;
     display: flex;
@@ -103,7 +103,7 @@ section {
 .home {
     min-height: 100vh;
     width: 100%;
-    background: url();   /* Add the URL for the background image */
+    background: url(images/hijabi.jpg);   /* Add background image */
     background-size: cover;
     background-position: center top;
     position: relative;
