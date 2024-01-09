@@ -11,9 +11,9 @@
 
 /* Define custom CSS variables for easy theme customization */
 :root {
-    --bg-color: #fce4d8;        /* Background color */
+    --bg-color: #c7c2c6;        /* Background color */
     --text-color: #111111;      /* Text color */
-    --main-color: #c8815f;      /* Main color accent */
+    --main-color: #977c94;      /* Main color accent */
     --big-font: 4.5rem;         /* Large font size */
     --h2-font: 3.3rem;          /* Heading 2 font size */
     --h3-font: 2rem;            /* Heading 3 font size */
@@ -149,4 +149,32 @@ section {
 .btn:hover {
     transform: translateY(-5px);
     background: var(--text-color);
+}
+
+.row img {
+    width: 300px;
+    height: auto; 
+}
+
+
+header.sticky{
+    background: var(--bg-color);
+    padding: 14px 14%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 105);
+}
+
+.center-text{
+    text-align: center;
+}
+
+.center-text h2{
+    font-size: var(--h2-font);
+}
+
+.Featured-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(350px , auto));
+    gap: 1.3rem;
+    align-items: center;
+    margin-top: 4rem ;
 }
