@@ -331,3 +331,7 @@ header.sticky{
     transition: all .35 ease;
     cursor: pointer;
 }
+
+.main img:hover{
+    opacity: 1;
+}
