@@ -11,9 +11,9 @@
 
 /* Define custom CSS variables for easy theme customization */
 :root {
-    --bg-color: #c7c2c6;        /* Background color */
+    --bg-color: #F9F5E7;        /* Background color */
     --text-color: #111111;      /* Text color */
-    --main-color: #977c94;      /* Main color accent */
+    --main-color: #607274;      /* Main color accent */
     --big-font: 4.5rem;         /* Large font size */
     --h2-font: 3.3rem;          /* Heading 2 font size */
     --h3-font: 2rem;            /* Heading 3 font size */
@@ -151,17 +151,14 @@ section {
     background: var(--text-color);
 }
 
-.row img {
-    width: 300px;
-    height: auto; 
-}
-
 
 header.sticky{
     background: var(--bg-color);
     padding: 14px 14%;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 105);
 }
+
+
 
 .center-text{
     text-align: center;
@@ -173,8 +170,164 @@ header.sticky{
 
 .Featured-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(350px , auto));
+    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
     gap: 1.3rem;
     align-items: center;
     margin-top: 4rem ;
+}
+
+.row{
+    position: relative;
+    transition: all .35s ease;
+}
+
+.row img {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+
+}
+
+.fea-text{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
+
+.fea-text h5{
+    font-size: 19px;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.fea-text p{
+    color: #555;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.row .arrow{
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+
+}
+
+.row .arrow i{
+    height: 35px;
+    width: 35px;
+    background: var(--bg-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease;
+}
+
+.row:hover{
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+}
+
+.row:hover i{
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+.cta{
+    height: 60vh;
+    width: 100%;
+    background: url(images/hijabi.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.cta-text h6 {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    margin-bottom: 14px;
+}
+
+.cta-text h4 {
+    font-size: 3rem;
+    line-height: 1.2;
+    letter-spacing: .5rem;
+    margin-bottom: 30px;
+}
+
+.box img {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.new-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(200px , 1fr));
+    gap: 1.3rem;
+    align-items: center;
+    margin-top: 4rem ;
+    text-align: center;
+}
+
+.box{
+    position: relative;
+    transition: all .40s ease;
+}
+
+.box h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.box h5{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sale{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 30px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover{
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+}
+
+.brand{
+    padding: 50px 14%;
+
+}
+
+.brand-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15px, auto));
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.main img{
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    transition: all .35 ease;
+    cursor: pointer;
 }
