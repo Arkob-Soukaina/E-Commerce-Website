@@ -174,7 +174,7 @@ header.sticky{
     grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
     gap: 1.3rem;
     align-items: center;
-    margin-top: 4rem ;
+    margin-top: 100px ;
 }
 
 /* Featured row styles */
@@ -192,14 +192,14 @@ header.sticky{
 /* Featured text styles */
 .fea-text{
     position: absolute;
-    top: 40px;
-    left: 50px;
+    top: 25px;
+    left: 25px;
 }
 
 .fea-text h5{
     font-size: 19px;
     letter-spacing: 2px;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 
 .fea-text p{
@@ -212,8 +212,8 @@ header.sticky{
 /* Featured arrow styles */
 .row .arrow{
     position: absolute;
-    bottom: 40px;
-    left: 50px;
+    bottom: 25px;
+    left: 25px;
 }
 
 .row .arrow i{
@@ -272,7 +272,7 @@ header.sticky{
     grid-template-columns: repeat(auto-fit , minmax(200px , 1fr));
     gap: 1.3rem;
     align-items: center;
-    margin-top: 4rem ;
+    margin-top: 100px ;
     text-align: center;
 }
 
@@ -293,7 +293,7 @@ header.sticky{
     font-weight: 700;
 }
 
-/* Box styles for new arrivals */
+/* Box styles */
 .box img {
     width: 100%;
     height: auto; 
@@ -350,17 +350,16 @@ header.sticky{
 
 
 /* Contact section styles */
-.contact{
+.Contact {
+    display: flex;
+    justify-content: space-around; 
     background: var(--text-color);
-    display: grid;
-  
+    padding-bottom: 70px;
 }
 
-/* Main contact styles */
-.main-contact h3{
-    font-size: 23px;
-    margin-bottom: 1.6rem;
-    color: var(--text-color);
+.main-contact {
+    text-align: left; 
+    margin: 10px; 
 }
 
 .main-contact h5{
@@ -369,19 +368,18 @@ header.sticky{
     color: #555;
 }
 
-/* List item links styles in main contact */
+.main-contact h3 {
+    font-size: 23px;
+    margin-bottom: 20px;
+    color: var(--bg-color);}
+
 .main-contact ul {
     list-style: none;
-    padding: 0; 
-    margin: 0; 
+    padding: 0;
+    margin: 0;
 }
 
-/* List items styles in main contact */
-.main-contact li{
-    margin-bottom: 15px;
-    margin-right: 15px;
 
-}
 
 /* List item links styles in main contact */
 .main-contact li a{
@@ -391,17 +389,24 @@ header.sticky{
     font-weight: 600;
     transition: all .35s ease;
     text-decoration: none; 
+    padding: 10px;
 
 }
 
 .main-contact li a:hover{
     transform: translateX(-8px);
-    color: var(--main-color);
+    color: var(--bg-color);
 }
 
 
 
 /* Social icons styles */
+
+.icons a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .icons{
     display: flex;
     margin-top: 2rem;
@@ -415,7 +420,7 @@ header.sticky{
 }
 
 .icons i:hover{
-    color: var(--main-color);
+    color: var(--bg-color);
     transform: scale(1.1) translateY(-5px);
 }
 
@@ -423,7 +428,7 @@ header.sticky{
 /* Copyright section styles */
 .copyright{
     text-align: center;
-    padding: 20px;
+    padding-bottom: 15px;
     background: var(--text-color);
 }
 
@@ -443,7 +448,7 @@ header.sticky{
 
 .top i{
     font-size: 22px;
-    color: var(--text-color);
+    color: var(--bg-color);
     padding: 14px;
     background: var(--main-color);
     border-radius: 2rem;
