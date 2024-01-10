@@ -404,3 +404,17 @@ header.sticky{
     font-size: 14px;
     letter-spacing: 1px;
 }
+
+.top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.top i{
+    font-size: 22px;
+    color: var(--text-color);
+    padding: 14px;
+    background: var(--main-color);
+    border-radius: 2rem;
+}
