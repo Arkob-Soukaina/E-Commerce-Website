@@ -104,7 +104,7 @@ section {
 .home {
     min-height: 100vh;
     width: 100%;
-    background: url(images/hijabi.jpg);  
+    background: url(images/hijabi0.jpg);  
     background-size: cover;
     background-position: center top;
     position: relative;
@@ -241,9 +241,9 @@ header.sticky{
 
 /* Call to action (cta) styles */
 .cta{
-    height: 60vh;
+    height: 70vh;
     width: 100%;
-    background: url(images/hijabi.jpg);
+    background: url(images/hijab4.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
