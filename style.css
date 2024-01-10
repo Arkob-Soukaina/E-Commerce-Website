@@ -112,12 +112,14 @@ section {
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
     justify-content: space-between;
+    padding-left: 50px;
+    padding-top: 250px;
 }
 
 /* Home text styles */
 .home-text h1 {
     font-size: var(--big-font);
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.2;
     letter-spacing: .6rem;
     margin-bottom: 1.4rem;
