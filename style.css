@@ -1,3 +1,5 @@
+
+
 /* Reset default styles for all elements */
 * {
     padding: 0;
@@ -30,7 +32,7 @@ body {
 header {
     width: 100%;
     top: 0;
-    right: 10;
+    right: 10px;
     z-index: 1000;
     position: fixed;
     display: flex;
@@ -103,7 +105,7 @@ section {
 .home {
     min-height: 100vh;
     width: 100%;
-    background: url(images/hijabi.jpg);   /* Add background image */
+    background: url(images/hijabi.jpg);  
     background-size: cover;
     background-position: center top;
     position: relative;
@@ -151,15 +153,14 @@ section {
     background: var(--text-color);
 }
 
-
+/* Sticky header styles */
 header.sticky{
     background: var(--bg-color);
     padding: 14px 14%;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 105);
 }
 
-
-
+/* Center text styles */
 .center-text{
     text-align: center;
 }
@@ -168,6 +169,7 @@ header.sticky{
     font-size: var(--h2-font);
 }
 
+/* Featured content styles */
 .Featured-content{
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
@@ -176,6 +178,7 @@ header.sticky{
     margin-top: 4rem ;
 }
 
+/* Featured row styles */
 .row{
     position: relative;
     transition: all .35s ease;
@@ -185,9 +188,9 @@ header.sticky{
     width: 100%;
     height: auto; 
     border-radius: 10px;
-
 }
 
+/* Featured text styles */
 .fea-text{
     position: absolute;
     top: 40px;
@@ -207,11 +210,11 @@ header.sticky{
     font-weight: 400;
 }
 
+/* Featured arrow styles */
 .row .arrow{
     position: absolute;
     bottom: 40px;
     left: 50px;
-
 }
 
 .row .arrow i{
@@ -237,6 +240,7 @@ header.sticky{
     color: var(--bg-color);
 }
 
+/* Call to action (cta) styles */
 .cta{
     height: 60vh;
     width: 100%;
@@ -247,6 +251,7 @@ header.sticky{
     align-items: center;
 }
 
+/* Cta text styles */
 .cta-text h6 {
     font-size: 17px;
     font-weight: 500;
@@ -261,13 +266,8 @@ header.sticky{
     margin-bottom: 30px;
 }
 
-.box img {
-    width: 100%;
-    height: auto; 
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
 
+/* New content styles */
 .new-content{
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(200px , 1fr));
@@ -277,6 +277,7 @@ header.sticky{
     text-align: center;
 }
 
+/* Box styles */
 .box{
     position: relative;
     transition: all .40s ease;
@@ -288,11 +289,21 @@ header.sticky{
     margin-bottom: 10px;
 }
 
-.box h5{
+.box h6{
     font-size: 16px;
     font-weight: 700;
 }
 
+/* Box styles for new arrivals */
+.box img {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* Sale badge styles */
 .sale{
     position: absolute;
     top: 0;
@@ -311,11 +322,12 @@ header.sticky{
     cursor: pointer;
 }
 
+/* Brand section styles */
 .brand{
     padding: 50px 14%;
-
 }
 
+/* Brand content styles */
 .brand-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15px, auto));
@@ -324,6 +336,7 @@ header.sticky{
     justify-content: center;
 }
 
+/* Brand images styles */
 .main img{
     width: 100%;
     height: auto;
@@ -336,8 +349,7 @@ header.sticky{
     opacity: 1;
 }
 
-
-
+/* Contact section styles */
 .contact{
     background-color: var(--text-color);
     display: grid;
@@ -345,6 +357,7 @@ header.sticky{
     gap: 2rem;
 }
 
+/* Main contact styles */
 .main-contact h3{
     font-size: 23px;
     margin-bottom: 1.6rem;
@@ -357,10 +370,10 @@ header.sticky{
     color: #555;
 }
 
+/* Social icons styles */
 .icons{
     display: flex;
     margin-top: 2rem;
-
 }
 
 .icons i{
@@ -375,11 +388,12 @@ header.sticky{
     transform: scale(1.1) translateY(-5px);
 }
 
+/* List items styles in main contact */
 .main-contact li{
     margin-bottom: 15px;
-
 }
 
+/* List item links styles in main contact */
 .main-contact li a{
     display: block;
     color: #555;
@@ -393,18 +407,21 @@ header.sticky{
     color: var(--bg-color);
 }
 
+/* Copyright section styles */
 .copyright{
     text-align: center;
     padding: 20px;
     background: var(--text-color);
 }
 
+/* Copyright text styles */
 .copyright p{
     color: #555;
     font-size: 14px;
     letter-spacing: 1px;
 }
 
+/* Scroll top button styles */
 .top{
     position: fixed;
     bottom: 2rem;
