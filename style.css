@@ -13,7 +13,7 @@
 
 /* Define custom CSS variables for easy theme customization */
 :root {
-    --bg-color: #F9F5E7;        /* Background color */
+    --bg-color: #EEE2DE;        /* Background color */
     --text-color: #111111;      /* Text color */
     --main-color: #607274;      /* Main color accent */
     --big-font: 4.5rem;         /* Large font size */
@@ -94,7 +94,7 @@ header {
     margin-right: 20px;
     display: none;
 }
-
+  
 /* Section styles */
 section {
     padding: 100px 14%;
