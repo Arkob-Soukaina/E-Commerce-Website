@@ -392,3 +392,15 @@ header.sticky{
     transform: translateX(-8px);
     color: var(--bg-color);
 }
+
+.copyright{
+    text-align: center;
+    padding: 20px;
+    background: var(--text-color);
+}
+
+.copyright p{
+    color: #555;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
