@@ -459,6 +459,8 @@ header.sticky{
 
 
 
+
+
 @media (max-width: 1000px) {
 
     header{
@@ -479,6 +481,7 @@ header.sticky{
 @media (max-width: 670px) {
     #menu-icon{
         display: block;
+        cursor: pointer;
     }
 
     .header-icons{
