@@ -460,7 +460,6 @@ header.sticky{
 
 
 
-
 @media (max-width: 1000px) {
 
     header{
@@ -512,12 +511,9 @@ header.sticky{
         left: 0;
     }
 
-
-
-
-
-
 }
+
+
 
 
 }
