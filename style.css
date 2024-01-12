@@ -16,8 +16,8 @@
     --bg-color: #EEE2DE;        /* Background color */
     --text-color: #111111;      /* Text color */
     --main-color: #607274;      /* Main color accent */
-    --big-font: 4.5rem;         /* Large font size */
-    --h2-font: 3.3rem;          /* Heading 2 font size */
+    --big-font: 4rem;         /* Large font size */
+    --h2-font: 3rem;          /* Heading 2 font size */
     --h3-font: 2rem;            /* Heading 3 font size */
     --normal-font: 1rem;        /* Normal font size */
 }
@@ -68,6 +68,8 @@ header {
     font-size: var(--normal-font);
     transition: all .36s ease;
     text-decoration: none;
+    text-transform: capitalize;
+
 }
 
 .navlist a:hover {
@@ -76,23 +78,26 @@ header {
 
 /* Header icons styles */
 .header-icons i {
-    font-size: 32px;
+    font-size: 30px;
+    font-weight: 300;
     color: var(--text-color);
     margin-right: 20px;
+    padding-right: 0%;
     transition: all .36s ease;
 }
 
 .header-icons i:hover {
+    transform: scale(1.1);
     color: var(--main-color);
 }
 
 /* Menu icon styles */
 #menu-icon {
+    cursor: pointer;
     font-size: 34px;
     color: var(--text-color);
     z-index: 10001;
-    margin-right: 20px;
-    display: none;
+   
 }
   
 /* Section styles */
@@ -102,7 +107,7 @@ section {
 
 /* Home section styles */
 .home {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background: url(images/hijabi0.jpg);  
     background-size: cover;
@@ -112,7 +117,7 @@ section {
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
     justify-content: space-between;
-    padding-left: 50px;
+    padding-left: 60px;
     padding-top: 250px;
 }
 
@@ -473,6 +478,44 @@ header.sticky{
         padding: 80px;
         transition: .1s;
     }
+
+
+
+
+
+    @media (max-width: 670px) {
+
+        #menu-icon{
+            display: block;
+            cursor: pointer;
+        }
+        .header-icons{
+            display: inline-flex;
+        }
+        .navlist{
+            position: absolute;
+            top: 100%;
+            left: -100%;
+            width: 280px;
+            height: 120vh;
+            background-color: var(--bg-color);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 150px 30px;
+            transition: all .45s ease;
+            
+        }
+        .navlist a{
+            display: block;
+            margin: 1.2rem 0;
+        }
+        .navlist.open{
+            left: 0;
+        }
+    }
+    
+
 
 
 }
