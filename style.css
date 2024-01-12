@@ -17,10 +17,12 @@
     --text-color: #111111;      /* Text color */
     --main-color: #607274;      /* Main color accent */
     --big-font: 4rem;         /* Large font size */
-    --h2-font: 3rem;          /* Heading 2 font size */
+    --h2-font: 3.3rem;          /* Heading 2 font size */
     --h3-font: 2rem;            /* Heading 3 font size */
     --normal-font: 1rem;        /* Normal font size */
 }
+
+
 
 /* Body styles */
 body {
@@ -124,10 +126,10 @@ section {
 /* Home text styles */
 .home-text h1 {
     font-size: var(--big-font);
-    font-weight: 700;
-    line-height: 1.2;
+    font-weight: 600;
+    line-height: 1.1;
     letter-spacing: .6rem;
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.5rem;
 }
 
 .home-text span {
@@ -281,6 +283,17 @@ header.sticky{
     align-items: center;
     margin-top: 100px ;
     text-align: center;
+}
+
+.heart-icon{
+    position: absolute;
+    right: 10px;
+    top:10px;
+
+}
+
+.heart-icon:hover{
+    color: red;
 }
 
 /* Box styles */
