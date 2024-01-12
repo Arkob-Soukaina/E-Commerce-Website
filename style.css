@@ -457,9 +457,6 @@ header.sticky{
 }
 
 
-
-
-
 @media (max-width: 1000px) {
 
     header{
@@ -477,40 +474,114 @@ header.sticky{
         transition: .1s;
     }
 
-@media (max-width: 670px) {
-    #menu-icon{
-        display: block;
-        cursor: pointer;
+
+
+
+/* Media query for phones */
+@media only screen and (max-width: 768px) {
+    /* Body styles */
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
     }
 
-    .header-icons{
-        display: inline-flex;
+    /* menu navbar styles */
+    header {
+        padding: 10px 5%; /* Adjusted padding for smaller screens */
     }
 
-    .navlist{
-        position: absolute;
-        top: 100%;
-        left: -100%;
-        width: 280px;
-        height: 120vh;
-        background-color: var(--bg-color);
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 150px 30px;
-        transition: all .45s ease;
-
+    /* Logo styles */
+    .logo {
+        font-size: 22px; /* Adjust font size for smaller screens */
     }
 
-    .navlist a{
-        display: block;
-        margin: 1.2rem 0;
+    /* Navigation styles */
+    .navlist {
+        padding: 10px 15px; /* Adjusted padding for smaller screens */
     }
 
-    .navlist.open{
-        left: 0;
+    /* Header icons styles */
+    .header-icons i {
+        font-size: 24px; /* Adjust font size for smaller screens */
     }
 
+    /* Menu icon styles */
+    #menu-icon {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    /* Section styles */
+    section {
+        padding: 30px 5%; /* Adjusted padding for smaller screens */
+    }
+
+    /* Home section styles */
+    .home {
+        padding: 30px 5%; /* Adjusted padding for smaller screens */
+    }
+
+    /* Home text styles */
+    .home-text h1 {
+        font-size: 3rem; /* Adjust font size for smaller screens */
+    }
+
+    /* Button styles */
+    .btn {
+        padding: 10px 20px; /* Adjusted padding for smaller screens */
+        font-size: 13px; /* Adjust font size for smaller screens */
+    }
+
+    /* Sticky header styles */
+    header.sticky {
+        padding: 10px 5%; /* Adjusted padding for smaller screens */
+    }
+
+    /* Featured text styles */
+    .fea-text h5 {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    /* Featured arrow styles */
+    .row .arrow i {
+        height: 25px; /* Adjusted height for smaller screens */
+        width: 25px; /* Adjusted width for smaller screens */
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    /* Call to action (cta) styles */
+    .cta-text h6 {
+        font-size: 15px; /* Adjust font size for smaller screens */
+    }
+
+    /* New content styles */
+    .new-content {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusted column width for smaller screens */
+        gap: 1rem; /* Adjusted gap for smaller screens */
+    }
+
+    /* Brand section styles */
+    .brand {
+        padding: 30px 5%; /* Adjusted padding for smaller screens */
+    }
+
+    /* Contact section styles */
+    .Contact {
+        padding-bottom: 50px; /* Adjusted padding for smaller screens */
+    }
+
+    /* Social icons styles */
+    .icons i {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    /* Copyright text styles */
+    .copyright p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    /* Scroll top button styles */
+    .top i {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }center-text
 }
 
 
