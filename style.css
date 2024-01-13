@@ -279,13 +279,14 @@ header.sticky{
     gap: 1.3rem;
     align-items: center;
     margin-top: 100px ;
-    text-align: center;
+    text-align: left;
+
 }
 
 .heart-icon{
     position: absolute;
     right: 10px;
-    top:10px;
+    top: 83%;
 
 }
 
@@ -547,7 +548,7 @@ header.sticky{
 
 
         }
-     
+
 
 
 }
