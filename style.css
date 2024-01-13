@@ -22,7 +22,7 @@
     --normal-font: 1rem;        /* Normal font size */
 }
 
-
+       
 
 /* Body styles */
 body {
@@ -95,10 +95,7 @@ header {
 
 /* Menu icon styles */
 #menu-icon {
-    cursor: pointer;
-    font-size: 34px;
-    color: var(--text-color);
-    z-index: 10001;
+    display: none;
    
 }
   
@@ -494,16 +491,24 @@ header.sticky{
         transition: .1s;
     }
 
-
+    #menu-icon {
+        display:none;
+       
+    }
 
 
 
     @media (max-width: 850px) {
 
-        #menu-icon{
+        #menu-icon {
             display: block;
-            cursor: pointer;
+            font-size: 34px;
+            color: var(--text-color);
+            z-index: 10001;
+           
         }
+
+
         .header-icons{
             display: inline-flex;
         }
@@ -529,7 +534,20 @@ header.sticky{
             left: 0;
         }
     }
+
     
+        .cta-text h4{
+        white-space: nowrap;
+        font-size: 30px;
+        }
+
+        .cta-text a{
+
+            font-size: 20px;
+
+
+        }
+     
 
 
 }
