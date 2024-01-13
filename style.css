@@ -475,6 +475,8 @@ header.sticky{
 }
 
 
+
+
 @media (max-width: 1000px) {
 
     header{
@@ -496,7 +498,7 @@ header.sticky{
 
 
 
-    @media (max-width: 670px) {
+    @media (max-width: 850px) {
 
         #menu-icon{
             display: block;
@@ -508,7 +510,7 @@ header.sticky{
         .navlist{
             position: absolute;
             top: 100%;
-            left: -100%;
+            left: 100%;
             width: 280px;
             height: 120vh;
             background-color: var(--bg-color);
@@ -528,7 +530,6 @@ header.sticky{
         }
     }
     
-
 
 
 }
