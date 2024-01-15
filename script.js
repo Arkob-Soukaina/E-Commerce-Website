@@ -1,7 +1,5 @@
 
 
-
-
 const header = document.querySelector("header");
 
 window.addEventListener("scroll" , function() {
@@ -41,11 +39,6 @@ sr.reveal('.Featured , .cta , .new , .brand , .Contact' , { delay:200 , origin:'
 
 
 
-
-
-
-
-
 // Show/hide the scroll-to-top button based on the scroll position
 window.onscroll = function () {
     showScrollToTopButton();
@@ -65,3 +58,4 @@ window.onscroll = function () {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
   }
+

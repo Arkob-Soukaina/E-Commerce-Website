@@ -22,7 +22,6 @@
     --normal-font: 1rem;        /* Normal font size */
 }
 
-       
 
 /* Body styles */
 body {
@@ -397,8 +396,6 @@ header.sticky{
     margin: 0;
 }
 
-
-
 /* List item links styles in main contact */
 .main-contact li a{
     display: block;
@@ -415,7 +412,6 @@ header.sticky{
     transform: translateX(-8px);
     color: var(--bg-color);
 }
-
 
 
 /* Social icons styles */
@@ -473,8 +469,6 @@ header.sticky{
 }
 
 
-
-
 @media (max-width: 1000px) {
 
     header{
@@ -496,7 +490,6 @@ header.sticky{
         display:none;
        
     }
-
 
 
     @media (max-width: 850px) {
@@ -548,8 +541,6 @@ header.sticky{
 
 
         }
-
-
 
 }
 
