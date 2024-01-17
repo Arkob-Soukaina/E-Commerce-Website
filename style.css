@@ -196,20 +196,27 @@ header.sticky{
     font-size: var(--h2-font);
 }
 
+
 /* Featured content styles */
 .Featured-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
     gap: 1.3rem;
-    align-items: center;
     margin-top: 100px ;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+    align-items: center;
 }
+    
+
 
 /* Featured row styles */
-.row{
+.row {
+    transition: all .40s ease;
     position: relative;
-    transition: all .35s ease;
-}
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
 
 .row img {
     width: 100%;
@@ -217,25 +224,34 @@ header.sticky{
     border-radius: 10px;
 }
 
+
+.row::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); 
+  z-index: 1;
+}
+
 /* Featured text styles */
-.fea-text{
+.fea-text {
     position: absolute;
-    top: 25px;
-    left: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    text-align: center;
 }
 
 .fea-text h5{
     font-size: 19px;
     letter-spacing: 2px;
-    margin-bottom: 10px;
 }
 
-.fea-text p{
-    color: #555;
-    font-size: 15px;
-    letter-spacing: 1px;
-    font-weight: 400;
-}
 
 /* Featured arrow styles */
 .row .arrow{
@@ -243,6 +259,22 @@ header.sticky{
     bottom: 25px;
     left: 25px;
 }
+
+
+
+  .arrow {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+  }
+
+  .row:hover .arrow {
+    opacity: 1; /* Show on hover */
+  }
+
 
 .row .arrow i{
     height: 35px;
@@ -278,19 +310,32 @@ header.sticky{
     align-items: center;
 }
 
+.final{
+    height: 70vh;
+    width: 100%;
+    background: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+
 /* Cta text styles */
 .cta-text h6 {
     font-size: 17px;
     font-weight: 500;
     letter-spacing: 6px;
     margin-bottom: 14px;
+
 }
 
 .cta-text h4 {
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 35px;
+    line-height: 1.4;
     letter-spacing: .5rem;
     margin-bottom: 30px;
+    padding-right: -90px;
 }
 
 
