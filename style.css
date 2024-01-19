@@ -13,7 +13,7 @@
 
 /* Define custom CSS variables for easy theme customization */
 :root {
-    --bg-color: #F3EEEA;        /* Background color */
+    --bg-color: #F5EEE6;        /* Background color */
     --text-color: #111111;      /* Text color */
     --main-color: #607274;      /* Main color accent */
     --big-font: 4rem;         /* Large font size */
@@ -196,6 +196,57 @@ header.sticky{
     font-size: var(--h2-font);
 }
 
+  
+
+
+
+
+.last-word {
+    text-align: center;
+    margin: 20px;
+    padding: 20px; 
+    background-color: var(--bg-color); 
+    border-radius: 10px; 
+    box-shadow: 0 9px 9px rgba(84, 84, 84, 0.4); 
+    height: 250px; 
+    width: 300px;
+
+  }
+  
+  .last-word a {
+    font-size: 40px;
+    color: var(--main-color);
+    text-decoration: none;
+
+  }
+
+
+  .last-word a:hover {
+    color: #000000; /* Change color on hover to a visually appealing one */
+  }
+  
+  
+  .last-word i {
+    vertical-align: middle;
+  }
+  
+  .last-word h3 {
+    font-size: 16px;
+    margin: 15px;
+    color: #000000; 
+  }
+  
+ 
+  .last-word p {
+    font-size: 14px;
+    color: #000000; 
+    margin: 0;
+  }
+  
+
+
+
+
 
 /* Featured content styles */
 .Featured-content{
@@ -306,17 +357,30 @@ header.sticky{
     background-position: center;
     display: flex;
     align-items: center;
+
 }
 
-.final{
+
+.final {
+    position: relative;
     height: 70vh;
     width: 100%;
-    background: url(images/bg.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url(images/leaves.jpg);
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
+    overflow: hidden; 
 }
+
+
+.final img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
 
 
 /* Cta text styles */
