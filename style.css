@@ -253,31 +253,21 @@ header.sticky{
     letter-spacing: 2px;
 }
 
-
 /* Featured arrow styles */
-.row .arrow{
-    position: absolute;
-    bottom: 25px;
-    left: 25px;
+.row {
+    position: relative; /* Set relative positioning for the parent container */
 }
 
-
-
-  .arrow {
+.row .arrow {
     position: absolute;
-    top: 100%;
-    left: 50%;
+    top: 150%; /* Position it right under the text */
+    left: 50%; /* Adjust left position to center horizontally */
     transform: translateX(-50%);
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease;
-  }
+}
 
-  .row:hover .arrow {
-    opacity: 1; /* Show on hover */
-  }
-
-
-.row .arrow i{
+.row .arrow i {
     height: 35px;
     width: 35px;
     background: var(--bg-color);
@@ -290,15 +280,22 @@ header.sticky{
     transition: all .35s ease;
 }
 
-.row:hover{
+.row:hover .arrow {
+    opacity: 1; /* Show on hover */
+}
+
+.row:hover {
     transform: scale(0.9) translateY(-5px);
     cursor: pointer;
 }
 
-.row:hover i{
+.row:hover i {
     background: var(--main-color);
     color: var(--bg-color);
 }
+
+
+
 
 /* Call to action (cta) styles */
 .cta{
