@@ -1,9 +1,10 @@
+
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 0);
-    hideMenuOnScroll(); // Call the function to hide menu on scroll
-    showScrollToTopButton(); // Call the function to show/hide scroll-to-top button
+    hideMenuOnScroll(); 
+    showScrollToTopButton(); 
 });
 
 let menu = document.querySelector('#menu-icon');
