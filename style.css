@@ -416,11 +416,15 @@ header.sticky{
     position: absolute;
     right: 10px;
     top: 83%;
+    margin-right: 10px; 
+
+  
+    
 
 }
 
 .heart-icon:hover{
-    color: red;
+    color: rgb(202, 8, 8);
 }
 
 /* Box styles */
@@ -429,10 +433,13 @@ header.sticky{
     transition: all .40s ease;
 }
 
+
+
 .box h5{
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
+    
 }
 
 .box h6{
