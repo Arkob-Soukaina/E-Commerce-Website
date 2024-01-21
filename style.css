@@ -647,61 +647,9 @@ header.sticky{
        
     }
 
-
-
-
-
-
-
        
 /* ------------- PHONE ----------- */
  @media (max-width: 768px) {
-
-
-  
-        
-    
-
-        .last-word {
-          display: none;
-          margin-bottom: 0;
-        }
-      
-        .last-word.active {
-          display: block;
-        }
-      
-        .final {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-        }
-      
-        .dots-container {
-          display: flex;
-        }
-      
-        .dot {
-            height: 15px;
-            width: 15px;
-            margin: 0 5px; 
-            background: radial-gradient(circle, #ccc 30%, #bbb 70%);
-            border-radius: 50%;
-            cursor: pointer;
-          }
-          
-          .dot.active {
-            background: radial-gradient(circle, #888 30%, #607274 70%);
-          }
-  
-      
-     
-      
-
-      
-
-      
 
         #menu-icon {
             display: block;
@@ -745,7 +693,6 @@ header.sticky{
             left: 0;
         }
     }
-
     
         .cta-text h4{
         white-space: nowrap;
@@ -760,14 +707,12 @@ header.sticky{
          
         }
 
-        
-        .cta-text a{
+                .cta-text a{
 
             font-size: 20px;
 
 
         }
-
 
             header {
                 padding: 10px 5%;
@@ -823,11 +768,9 @@ header.sticky{
                 font-size: 15px;
                 margin-bottom: 10px;
             }
-        
-        
+                
 
-            
-            .cta-text a {
+                       .cta-text a {
                 font-size: 16px;
                 margin-top: 10px;
             }
@@ -839,11 +782,7 @@ header.sticky{
                 padding: 30px;
             }
 
-
-    
-
-
-        
+            
             .row img {
                 height: 100%;
                 border-radius: 5px;
@@ -851,16 +790,12 @@ header.sticky{
                 
             }
             
-        
-            .fea-text h5 {
+                    .fea-text h5 {
                 font-size: 20px;
             }
         
 
-
-
-            
-            .new-content {
+                     .new-content {
                 margin-top:30px ;
             }
 
@@ -889,10 +824,43 @@ header.sticky{
             }
 
 
+           
 
-
-
-
+        .last-word {
+            display: none;
+            margin-bottom: 0;
+          }
+        
+          .last-word.active {
+            display: block;
+          }
+        
+          .final {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+        
+          .dots-container {
+            display: flex;
+          }
+        
+          .dot {
+              height: 15px;
+              width: 15px;
+              margin: 0 5px; 
+              background: radial-gradient(circle, #ccc 30%, #bbb 70%);
+              border-radius: 50%;
+              cursor: pointer;
+            }
+            
+            .dot.active {
+              background: radial-gradient(circle, #888 30%, #607274 70%);
+            }
+  
+            
+        
             
             .main-contact h5 {
                 font-size: 18px;

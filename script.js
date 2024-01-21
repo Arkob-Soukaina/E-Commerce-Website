@@ -48,11 +48,6 @@ function scrollToTop() {
 
 
 
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   var currentIndex = 0;
   var sections = document.querySelectorAll(".last-word");
