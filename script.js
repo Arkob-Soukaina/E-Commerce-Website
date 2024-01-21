@@ -51,3 +51,33 @@ function scrollToTop() {
 
 
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  var currentIndex = 0;
+  var sections = document.querySelectorAll(".last-word");
+  var dots = document.querySelectorAll(".dot");
+
+  // Show the initial section and corresponding dot
+  sections[currentIndex].classList.add("active");
+  dots[currentIndex].classList.add("active");
+
+  function showSection(index) {
+    // Hide the current section and dot
+    sections[currentIndex].classList.remove("active");
+    dots[currentIndex].classList.remove("active");
+
+    // Show the selected section and dot
+    currentIndex = index;
+    sections[currentIndex].classList.add("active");
+    dots[currentIndex].classList.add("active");
+  }
+
+  // Assign click event to each dot
+  dots.forEach(function (dot, index) {
+    dot.addEventListener("click", function () {
+      showSection(index);
+    });
+  });
+});
+
+
